@@ -22,7 +22,8 @@ class _HomePageState extends State<HomePage> {
             title: Text('WhatsApp'),
             bottom: TabBar(
               tabs: [
-                Tab(icon: Icon(Icons.group,),),
+                Tab(icon: Icon(Icons.groups,
+                color: Colors.white,),),
               Text('Chats', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
               Text('Updates', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
               Text('Calls', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
@@ -53,8 +54,7 @@ class _HomePageState extends State<HomePage> {
                   SizedBox(height: 20,),
                   ListTile(
                     leading: CircleAvatar(
-                      child: Icon(Icons.group_add),
-                      //backgroundImage: AssetImage('assets/images/ahsan.png'),
+                      child: Icon(Icons.groups,),
                     ),
                     title: Text('New community'),
                   ),
